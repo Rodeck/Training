@@ -14,9 +14,30 @@ namespace Training
         [STAThread]
         static void Main()
         {
+            
+            List<ProgramForm> forms = new List<ProgramForm>() 
+            { 
+                new ProgramForm() { FormType = typeof(Form1), Name = "Maps"},
+                new ProgramForm() { FormType = typeof(Drop), Name = "Drop symulator"}
+            };
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            ProgramSwitcher switcher = new ProgramSwitcher(forms);
+
+            Application.Run(switcher);
+        }
+    }
+
+    public class ProgramForm
+    {
+        public Type FormType { get; set; }
+        public string Name { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }
