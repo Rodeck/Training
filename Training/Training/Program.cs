@@ -18,7 +18,8 @@ namespace Training
             List<ProgramForm> forms = new List<ProgramForm>() 
             { 
                 new ProgramForm() { FormType = typeof(Form1), Name = "Maps"},
-                new ProgramForm() { FormType = typeof(Drop), Name = "Drop symulator"}
+                new ProgramForm() { FormType = typeof(Drop), Name = "Drop symulator"},
+                new ProgramForm() { FormType = typeof(JakasNazwa), Name = "Program 3"},
             };
 
             Application.EnableVisualStyles();

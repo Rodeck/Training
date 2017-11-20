@@ -56,6 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="JakasNazwa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JakasNazwa.Designer.cs">
+      <DependentUpon>JakasNazwa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProgramSwitcher.cs">
       <SubType>Form</SubType>
@@ -69,6 +75,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JakasNazwa.resx">
+      <DependentUpon>JakasNazwa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProgramSwitcher.resx">
       <DependentUpon>ProgramSwitcher.cs</DependentUpon>
